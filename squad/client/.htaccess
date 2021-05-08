@@ -2,7 +2,7 @@ Options -Multiviews
 
 RewriteEngine ON
 
-RewriteBase /squad/client/public
+RewriteBase /tranquil-wave-85850.herokuapp.com/squad/client/public
 
 RewriteCond %(REQUEST_FILENAME) !-d
 RewriteCond %(REQUEST_FILENAME) !-f
