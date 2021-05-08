@@ -2,7 +2,7 @@
     Options -Multiviews
     RewriteEngine On
 
-    RewriteBase /Squad.com/admin/public
+    RewriteBase /squad/admin/public
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
