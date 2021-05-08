@@ -2,7 +2,7 @@ Options -Multiviews
 
 RewriteEngine ON
 
-RewriteBase /Squad/client/public
+RewriteBase /squad/client/public
 
 RewriteCond %(REQUEST_FILENAME) !-d
 RewriteCond %(REQUEST_FILENAME) !-f
