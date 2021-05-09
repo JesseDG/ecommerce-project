@@ -1,0 +1,1 @@
+web: vendor/bin/heroku-app-apache2 squad/client/public/
