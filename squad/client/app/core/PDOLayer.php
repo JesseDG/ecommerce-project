@@ -10,7 +10,8 @@ class PDOLayer{
     protected $_delete;
     protected $_selectOne;
     protected $_selectAll;
-    protected $_DBName = 'squad.com.db';
+    //protected $_DBName = 'squad.com.db';
+    protected $_DBName = 'epiz_28582191_squad_ecommerce';
     protected $_additions = ['ID'];
     protected $_exclusions = ['_connection','_className','_classProps','_exclusions','_additions','_DBName','_insert','_update','_delete','_selectOne','_selectAll'];//list PDOLayer properties here
     
@@ -18,7 +19,8 @@ class PDOLayer{
     {
         $this->_connection = $connection;
         if ($this->_connection === null) {
-            $this->_connection = new PDO('mysql:host=localhost;dbname=' . $this->_DBName, 'root', '');
+            //$this->_connection = new PDO('mysql:host=localhost;dbname=' . $this->_DBName, 'root', '');
+            $this->_connection = new PDO('mysql:host=sql308.epizy.com;dbname=' . $this->_DBName, 'epiz_28582191', 'Lk1Clj82Ph');
             $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         $this->getInfo();
